@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./ -c-1",
+    "build": "echo 'No build step required for static HTML'"
+  },
+  "author": "M.P. Mentzer-Hernández",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+} 
