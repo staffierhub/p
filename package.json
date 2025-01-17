@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio website",
+  "description": "Portfolio - M.P. Mentzer-Hernández",
   "main": "index.js",
   "scripts": {
     "start": "http-server ./ -c-1",
