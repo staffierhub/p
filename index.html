@@ -58,11 +58,12 @@
         }
         
         .section {
-          max-width: 100%;
-          margin: 0 auto;
+          max-width: 900px;
+          margin: 25px auto;
           background-color: #fff;
-          padding: 0;
-         box-sizing: border-box;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
         
         .section h2 {
@@ -73,21 +74,15 @@
         
         .map {
           text-align: center;
-            margin: 0; 
-            padding: 0; 
         }
         
-     .map img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: opacity 0.1s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); 
-    display: block; 
-    margin: 0 auto;
-}
-
+        .map img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: opacity 0.3s;
+        }
         
         .map img:hover {
           opacity: 0.9;
@@ -295,9 +290,7 @@
     </header>
     <section class="section">
         <h2>Life Experience</h2>
-            <div class="map">
-                <img src="img/map.svg" alt="World map showing countries lived, worked, and visited" onclick="openModal(this.src)">
-            </div>
+        <div class="map"> <img src="img/map.svg" alt="World map showing countries lived, worked, and visited" onclick="openModal(this.src)"> </div>
     </section> 
    <!-- Modal -->
 <div id="imageModal" class="modal" onclick="closeModal()">
