@@ -272,11 +272,22 @@
           width: 8px;
           background-color: #f1f1f1;
         }
+
+.life-experience-bg {
+  background-image: url("img/life-bg.png"); /* Adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 25px auto;
+  max-width: 900px;
+  color: #fff; /* Optional: helps contrast with background */
+}
+
         
-  /* .education-section::-webkit-scrollbar-thumb {
-          background-color: #888;
-          border-radius: 4px;
-} */
+  /* End CSS */
 
         
     </style>
@@ -290,15 +301,30 @@
             <p>My experiences in Afghanistan, Iraq, Saudi Arabia, and South Korea have shaped my ability to work in international settings with professionalism and cultural sensitivity.</p>
         </div>
     </header>
+   
+   <!-- WORKS without background experience section
+    
     <section class="section">
         <h2>Life Experience</h2>
         <div class="map"> <img src="img/map.svg" alt="World map showing countries lived, worked, and visited" onclick="openModal(this.src)"> </div>
     </section> 
+ -->
+    <section class="life-experience-bg">
+    <h2 style="border-bottom: 2px solid #fff;">Life Experience</h2>
+    <div class="map">
+        <img src="img/map.svg" alt="World map showing countries lived, worked, and visited" onclick="openModal(this.src)">
+    </div>
+</section>
+    
    <!-- Modal -->
 <div id="imageModal" class="modal" onclick="closeModal()">
     <img class="modal-content" id="modalImage">
 </div>
 
+
+
+
+    
 <script>
     function openModal(imageSrc) {
         const modal = document.getElementById('imageModal');
